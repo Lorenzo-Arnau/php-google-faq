@@ -71,14 +71,29 @@ $faqs = [
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA==" crossorigin="anonymous" />
 </head>
 <body>
     <header>
         <div class="navbar-one">
-
+            <div class="navbar-one-logo">
+                <img src="img/logo.png" alt=""><span>Privacy e termini</span>
+            </div>
+            <div class="navbar-one-account">
+            <i class="fas fa-bars"></i>
+            <img src="img/account.jpg" alt="">
+            </div>
         </div>
         <div class="navbar-two">
-            
+            <div class="navbar-two-menu">
+                <ul>
+                    <li>Introduzione</li>
+                    <li>Note sulla privacy</li>
+                    <li>Termini di servizio</li>
+                    <li>Tecnologie</li>
+                    <li>Domande frequenti</li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -89,6 +104,16 @@ $faqs = [
             <?php } ?>
         </div>
     </main>
+    <footer>
+        <div class="credits">
+            <ul>
+                <li>Google</li>
+                <li>Tutto su Google</li>
+                <li>Privacy</li>
+                <li>Termini</li>
+            </ul>
+        </div>
+    </footer>
     
 </body>
 </html>

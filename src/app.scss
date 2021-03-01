@@ -5,19 +5,66 @@
 }
 header{
    @include flex-col;
-   height: 100px;
+   height: 110px;
    width: 100%;
-   background-color: aquamarine;
    position: fixed;
+   background-color: #fff;
+   border-bottom: 1px solid #ccc;
    .navbar-one{
+    @include flex-row;
     height: 60%;
     width: 100%;
-    background-color: blueviolet;
+    justify-content: space-between;
+    color: #5F6368;
+    &-logo{
+        @include flex-row;
+        width: 350px;
+        align-items: center;
+        img{
+            height: 50px;
+        }
+        span{
+            @include textTitle;
+            font-size: 24px;
+        }
+    }
+    &-account{
+        @include flex-row;
+        justify-content: flex-end;
+        width: 350px;
+        align-items: center;
+        font-size: 25px;
+        img{
+            height: 55px;
+            padding: 0px 25px;
+            border-radius: 50%;
+        }
+        
+    }
    }
    .navbar-two{
     height: 40%;
     width: 100%;
-    background-color: aqua;
+    color: #5F6368;
+    &-menu{
+        @include flex-row;
+        @include textTitle;
+        width: 700px;
+        height: 100%;
+        align-items: center;
+
+        ul{
+            @include flex-row;
+            width: 100%;
+            justify-content: space-around;
+            list-style: none;
+            li:last-child{
+                color: #3367D6;
+                padding-bottom:10px ;
+                border-bottom: 3px solid #3367D6;
+            }
+        }
+    }
    }
 }
 main{
@@ -47,6 +94,28 @@ main{
             }
             .alpha li{
                 list-style: lower-alpha;
+            }
+        }
+    }
+}
+footer{
+    @include flex-row;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: #eee;
+    .credits{
+        width: 50%;
+        ul{
+            @include flex-row;
+            align-items: center;
+            font-size: 10px;
+            color: #5F6368;
+            width: 100%;
+            height: 100%;
+            list-style: none;
+            li{
+                margin-right: 10px;
             }
         }
     }
