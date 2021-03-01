@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100%;
+  background-color: aquamarine;
+  position: fixed;
+}
+header .navbar-one {
+  height: 60%;
+  width: 100%;
+  background-color: blueviolet;
+}
+header .navbar-two {
+  height: 40%;
+  width: 100%;
+  background-color: aqua;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 200px;
+}
+main .container {
+  width: 50%;
+}
+main .container .title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 550;
+  padding: 20px 0px;
+  color: #3C4043;
+}
+main .container .title:nth-child(7) {
+  font-size: 20px;
+}
+main .container .content {
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+  font-size: 15px;
+}
+main .container .content ol {
+  padding: 25px;
+}
+main .container .content ol li {
+  padding-left: 20px;
+}
+main .container .content .alpha li {
+  list-style: lower-alpha;
+}
